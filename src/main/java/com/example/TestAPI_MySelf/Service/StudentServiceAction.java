@@ -29,7 +29,7 @@ public class StudentServiceAction implements StudentService{
         if (result.isPresent()) {
             data = result.get();
         }else {
-            throw new RuntimeException("Not found User ID = " + id + "Test for change");
+            throw new RuntimeException("Not found User ID = " + id);
         }
         return data;
     }
